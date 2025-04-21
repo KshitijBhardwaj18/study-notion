@@ -3,6 +3,7 @@ const Category = require("../models/Category")
 function getRandomInt(max) {
   return Math.floor(Math.random() * max)
 }
+// Signup Controller for Registering USers
 exports.createCategory = async (req, res) => {
   try {
     const { name, description } = req.body
